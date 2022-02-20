@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(255, 213, 29);
+}
+
+
+/*-------------------nav--------------*/
+
+nav {
+    background-color: black;
+    height: 40px;
+    vertical-align: middle;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li,
+a {
+    color: white;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+
+/* */
+
+article {
+    width: 80%;
+    min-height: 530px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+
+/*Phần header chia làm 2 phần */
+
+.tren {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid rgb(219, 213, 213);
+}
+
+.tren>.trai {
+    text-decoration: none;
+    float: left;
+    margin-left: 125px;
+    line-height: 45px;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+}
+
+.tren>.phai {
+    text-decoration: none;
+    float: right;
+    margin-right: 125px;
+    line-height: 45px;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+}
+
+.tren>a:hover {
+    color: rgb(248, 101, 101);
+}
+
+.duoi {
+    width: 100%;
+    height: 120px;
+}
+
+.anh-nhom {
+    width: 15%;
+    margin-left: 65px;
+    margin-top: 10px;
+    float: left;
+}
+
+.anh-nhom>a>img {
+    width: 227px;
+    height: 100px;
+}
+
+.chucnang {
+    width: 55%;
+    height: 50px;
+    float: left;
+    margin-right: 250px;
+    margin-top: 30px;
+}
+
+.chucnang>li {
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.chucnang>li>a {
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+    line-height: 50px;
+}
+
+.red>a>b {
+    color: red;
+}
+
+.chucnang>li>a:hover {
+    color: rgb(248, 101, 101);
+}
+
+.red>a>b:hover {
+    color: rgb(248, 101, 101);
+}
+
+.cn-con1 {
+    width: 100px;
+    min-height: 50px;
+    position: absolute;
+    top: 125px;
+    left: 325px;
+    list-style: none;
+    box-shadow: 0px 0px 3px gray;
+    background-color: white;
+    display: none;
+}
+
+.cn-con1>li {
+    text-align: justify;
+}
+
+.cn-con1>li>a {
+    text-decoration: none;
+    line-height: 25px;
+    color: black;
+}
+
+.cn-con2 {
+    width: 180px;
+    min-height: 50px;
+    position: absolute;
+    left: 740px;
+    top: 125px;
+    list-style: none;
+    box-shadow: 0px 0px 3px gray;
+    background-color: white;
+    display: none;
+}
+
+.cn-con2>li {
+    text-align: justify;
+}
+
+.cn-con2>li>a {
+    text-decoration: none;
+    line-height: 25px;
+    color: black;
+}
+
+.cn-con1>li>a:hover {
+    color: rgb(248, 101, 101);
+}
+
+.cn-con2>li>a:hover {
+    color: rgb(248, 101, 101);
+}
+
+.chucnang>li:hover .cn-con1 {
+    display: block;
+}
+
+.chucnang>li:hover .cn-con2 {
+    display: block;
+}
+
+.timkiem {
+    width: 20%;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+.timkiem>li {
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.timkiem>li>a>img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.timkiem>li>form {
+    position: absolute;
+    top: 45px;
+    right: 140px;
+    display: none;
+}
+
+.timkiem>li>form>input {
+    border-radius: 10px;
+    border: 3px solid rgb(33, 33, 46);
+}
+
+.timkiem>li:hover>form {
+    display: block;
+}
+
+
+/* Phần footer*/
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 20px;
+}
+
+.grid-column-2 {
+    padding-left: 5px;
+    padding-left: 5px;
+    width: 16.667%;
+}
+
+.grid-column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 19%;
+}
+
+.footer-item-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item-link:hover {
+    color: var(--primary-color);
+}
+
+.footer {
+    padding-top: 12px;
+    border-top: 4px solid var(--primary-color);
+}
+
+.footer-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item-icon {
+    font-size: 1.6rem;
+    margin: -1px 8px 0;
+}
+
+.footer-dowload {
+    display: flex;
+}
+
+.footer-dowload-qr {
+    width: 150px;
+    height: 150px;
+}
+
+.footer-dowload-app-img {
+    width: 65px;
+}
+
+
+/* Phần article*/
+
+.anh-sp {
+    width: calc(50% - 30px);
+    height: 480px;
+    margin-top: 50px;
+    float: left;
+}
+
+.anh-sp>img {
+    width: 100%;
+    height: 480px;
+}
+
+.thongtin-sp {
+    width: 47%;
+    min-height: 480px;
+    margin-top: 50px;
+    float: right;
+}
+
+.tt-sp {
+    width: 90%;
+    min-height: 300px;
+    margin: 0px auto;
+}
+
+.tt-sp>li {
+    line-height: 40px;
+    list-style: none;
+    border-bottom: 1px solid rgb(255, 180, 180);
+}
+
+.tt-sp>li>b {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mua-sp {
+    width: 100%;
+    height: 55px;
+    margin-top: 30px;
+}
+
+.mua-sp>div>a>button {
+    width: 250px;
+    height: 45px;
+    float: left;
+    margin-left: 20px;
+}
+
+.mua-sp2 {
+    width: 100%;
+    height: 50px;
+}
+
+.mua-sp2>a>button {
+    width: 520px;
+    height: 42px;
+    margin-left: 20px;
+}
+
+.b1>a>button {
+    color: white;
+    background-color: rgb(255, 178, 34);
+    border: none;
+}
+
+.b2>a>button {
+    color: white;
+    background-color: rgb(255, 34, 34);
+    border: none;
+}
+
+.mua-sp2>a>button {
+    color: white;
+    background-color: rgb(34, 167, 255);
+    border: none;
+}
+
+.b1>a>button:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.4s ease;
+}
+
+.b2>a>button:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.4s ease;
+}
+
+.mua-sp2>a>button:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.4s ease;
+}
